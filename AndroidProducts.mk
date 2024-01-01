@@ -8,7 +8,6 @@
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/omni_kaiser.mk
 
-COMMON_LUNCH_CHOICES := \
-    omni_kaiser-user \
-    omni_kaiser-userdebug \
-    omni_kaiser-eng
+$(call add_lunch_combo, omni_kaiser-user)
+$(call add_lunch_combo, omni_kaiser-userdebug)
+$(call add_lunch_combo, omni_kaiser-eng)
